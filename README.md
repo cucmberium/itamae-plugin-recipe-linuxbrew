@@ -1,6 +1,6 @@
 # Itamae::Plugin::Recipe::Linuxbrew
 
-[Itamae](https://github.com/ryotarai/itamae) plugin to install linuxbrew
+[Itamae](https://github.com/ryotarai/itamae) plugin to install linuxbrew.
 
 ## Installation
 
@@ -20,7 +20,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Recipe
+
+```ruby
+# your recipe
+iclude_recipe "linuxbrew::install"
+```
+
+### Node
+
+Use this with itamae -y node.yml
+
+NOTE: **Required** `node[:linuxbrew][:user]`
+
+```yaml
+# node.yml
+linuxbrew:
+  # install user
+  user: user
+
+  # specify scheme to use in git clone, optional (default: https)
+  scheme: https
+
+  # brew tap
+  tap:
+    - homebrew/core
+    - homebrew/science
+    - linuxbrew/xorg
+    - linuxbrew/dupes
+```
 
 ## Contributing
 
