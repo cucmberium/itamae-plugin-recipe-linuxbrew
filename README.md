@@ -48,6 +48,12 @@ linuxbrew:
     - homebrew/science
     - linuxbrew/xorg
     - linuxbrew/dupes
+
+  # brew install package_name
+  packages:
+    - git
+    - gcc
+    - imagemagick
 ```
 
 ## Contributing

@@ -16,3 +16,4 @@ remote_file "/etc/profile.d/linuxbrew.sh" do
 end
 
 include_recipe 'linuxbrew::tap'
+include_recipe 'linuxbrew::package'
