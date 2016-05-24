@@ -15,10 +15,4 @@ remote_file "/etc/profile.d/linuxbrew.sh" do
   mode '644'
 end
 
-(node[:linuxbrew][:tap] || []).each do |tap|
-  execute "Add repository: #{tap}" do
-    user node[:linuxbrew][:user]
-    command "/bin/bash -lc \"brew tap #{tap}\""
-    not_if  "/bin/bash -lc \"brew tap | grep -q #{tap}\""
-  end
-end
+include_recipe 'linuxbrew::tap'

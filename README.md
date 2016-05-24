@@ -42,8 +42,8 @@ linuxbrew:
   # specify scheme to use in git clone, optional (default: https)
   scheme: https
 
-  # brew tap
-  tap:
+  # brew tap repo
+  taps:
     - homebrew/core
     - homebrew/science
     - linuxbrew/xorg
