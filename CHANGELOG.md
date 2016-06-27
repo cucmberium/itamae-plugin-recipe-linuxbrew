@@ -1,5 +1,11 @@
+## v0.0.3
+### Added
+
+- Add install linuxbrew multi-user
+
 ## v0.0.2
 ### Fixed
+
 - Add $HOME/.linuxbrew/bin to $PATH.
 
 ## v0.0.1

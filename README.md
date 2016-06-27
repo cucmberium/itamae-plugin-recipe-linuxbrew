@@ -38,6 +38,11 @@ NOTE: **Required** `node[:linuxbrew][:user]`
 linuxbrew:
   # install user
   user: user
+  # or
+  # users:
+  #   - alpha
+  #   - beta
+  #   - charile
 
   # specify scheme to use in git clone, optional (default: https)
   scheme: https
