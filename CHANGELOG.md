@@ -1,3 +1,8 @@
+## v0.0.3
+### Added
+
+- Add install linuxbrew multi-user
+
 ## v0.0.2
 ### Fixed
 
